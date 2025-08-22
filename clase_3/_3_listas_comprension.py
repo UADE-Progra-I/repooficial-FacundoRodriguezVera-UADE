@@ -4,7 +4,7 @@ import math
 
 # Ejemplo 1: Crear una Lista con Listas por Comprensión
 numeros = [0, 1, 2, 3, 4, 5]  # arreglo o iterable numeros
-cuadrados = [num**2 for num in numeros]
+cuadrados = [num**2 for num in numeros] # Se lee al reves
 print("Cuadrados:", cuadrados)  # [0, 1, 4, 9, 16, 25]
 
 # Ejemplo 2: Filtrar Elementos
@@ -17,7 +17,7 @@ print("Cuadrados de pares:", listaCuadradosParesPorComp)  # [4, 0, 16]
 # [ exp1 if condicion else exp2  for item in iterable]
 lista = [1, -2, 5, 0, 3, 4]
 listaPorComp = [num**2 if num % 2 == 0 else num for num in lista]
-print("Cuadrados de pares, impares sin cambios:", listaPorComp)  # [1, 4, 5, 0, 3, 16]
+print("Cuadrados de pares, impares sin cambios:", listaPorComp)  # [1, 4, 5, 0, 3, 16] --- Como es el orden? Porque el for esta primero al fondo y dps al medio.
 
 # Ejemplo 4: Aplicación de Funciones
 numeros = [1, 4, 9, 16]
