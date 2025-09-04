@@ -12,7 +12,10 @@
 Declara una función lambda llamada cuadrado que reciba un número y devuelva ese número al cuadrado.
 Prueba tu función con los valores 2, 5 y 10.
 """
-
+cuadrado = lambda x: x ** 2
+print(cuadrado(2))  # Output: 4
+print(cuadrado(5))  # Output: 25
+print(cuadrado(10))  # Output: 100
 
 # ---------------------------------------------------------------------
 # Ejercicio 2 – Obtener el mayor de dos números
@@ -25,4 +28,6 @@ Clue: usar el operador ternario
 val1 if condicion else val2
 """
 
+mayor = lambda x, y: x if x > y else y
+print(mayor(7, 3))    # Output: 7
 

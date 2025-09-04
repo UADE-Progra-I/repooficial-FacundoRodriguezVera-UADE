@@ -1,5 +1,5 @@
 # Dada una lista de int, la podemos ordenar con el método sort()
-lista = [1, 3, 4, 6]
+lista = [1, 3, 7, 6]
 lista.sort()
 print(lista)
 

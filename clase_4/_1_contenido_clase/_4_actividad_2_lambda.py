@@ -14,6 +14,14 @@ Luego generar una función que retorne la lista ordenada por alguna variable num
 Clue: usar función sorted combinada con lambda para ordenar ese arreglo
 """
 
+matriz = [
+    ["producto A", 30, 200.5],
+    ["producto B", 20, 150.0],
+    ["producto C", 50, 300.7],
+    ["producto D", 10, 100.2],
+]
+matriz_ordenada = sorted(matriz, key=lambda x: x[1])
+print(matriz_ordenada) ## ¿Sorted y sort ordenan numero y letra?
 
 # ---------------------------------------------------------------------
 #  Ejercicio 2 - Invertir el orden
@@ -22,5 +30,10 @@ Clue: usar función sorted combinada con lambda para ordenar ese arreglo
 Generar una función complementaria, que además de ordenar, 
 lo haga de forma ascendente o descendente, según indique el usuario 
 """
-
+desicion = input("1 o 2: -> ")
+if desicion == "1":
+    matriz_ordenada = sorted(matriz, key=lambda x: x[1], reverse=False)
+else:
+    matriz_ordenada = sorted(matriz, key=lambda x: x[1], reverse=True)
+print(matriz_ordenada)
 
