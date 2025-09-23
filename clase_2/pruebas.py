@@ -131,4 +131,4 @@ def multiplicar(mUno, mDos):
 print([[6]*3 for i in range(3)])
 print([[1]*4 for i in range(3)])
 print(multiplicar([[6]*2 for i in range(4)], [[1]*4 for i in range(2)]))
-print(matriz_por_matriz([[6]*2 for i in range(4)], [[1]*4 for i in range(2)]))
+print(matriz_por_matriz([[6]*2 for i in range(4)], [[1]*4 for i in range(2)])) # prueba
