@@ -9,3 +9,5 @@ def mostrar_matriz(matriz):
         for col in range(nColumnas):
             print("%3d" % matriz[fila][col], end="")
         print()
+
+mostrar_matriz([[21]*4 for i in range(3)])
