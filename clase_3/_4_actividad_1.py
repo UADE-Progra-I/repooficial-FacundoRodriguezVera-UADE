@@ -75,7 +75,14 @@ print(estudiantesApellidos.index("Bolmaro"))
 # Contar cuántos estudiantes tienen el mismo apellido con count() (simular apellidos repetidos agregando uno igual).
 # Clue 1: generar una lista solo con apellidos
 # Clue 2: investigar como implementarlo con listas por comprension
+lista = ["a", "b", "b", "a", "c", "d"]
+lista_sin_repeticiones = [ (i, lista.count(i)) for i in lista]
+print(lista_sin_repeticiones)
 
+lista = ["a", "b", "b", "a", "c", "d"]
+lista_sin_repeticiones = []
+[lista_sin_repeticiones.append(i) for i in lista if i not in lista_sin_repeticiones]
+print(lista_sin_repeticiones)  
 # 8
 # Ordenar alfabéticamente los estudiantes por nombre
 # Clue 1: Pueden usar sort pero deben combinarlo con funcion lambda

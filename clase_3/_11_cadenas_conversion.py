@@ -30,6 +30,7 @@ print("rpartition:", tupla_rpartition)  # rpartition: ('manzana pera manzana uva
 
 # separador.join(iterable)
 print("\njoin:")
-palabras = ["Hola", "mundo", "esto", "es", "un", "ejemplo"]
-resultado = " ".join(palabras)
-print(resultado)  #    "Hola mundo esto es un ejemplo"
+cadena_multilinea = "Hola mundo\nEsto es una prueba\nCon varias líneas"
+lista_splitlines = cadena_multilinea.splitlines()
+print("splitlines:", lista_splitlines)  # ['Hola mundo', 'Esto es una prueba', 'Con varias líneas']
+

@@ -11,7 +11,7 @@ def multiplicar(num1, num2):
 # --------------------------
 # map
 
-calificaciones = [8, 8.5, 9, 9.75]
+calificaciones = [8, 8.5, 5, 9.75]
 
-calificaciones_int = list(map( lambda calificacion : round(calificacion) , calificaciones  ))
+calificaciones_int = list(map( lambda calificacion : (round(calificacion), "Aprobo" if calificacion > 7 else "Desaprobo") , calificaciones  ))
 print(calificaciones_int)

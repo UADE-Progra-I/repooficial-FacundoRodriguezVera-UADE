@@ -10,7 +10,8 @@ Los caracteres de la posición 2 a la 6.
 
 Pista: usar índices y slicing (str[i:j]).
 """
-
+cad = "Programacion"
+print(f"Primer caracter: {cad[0]}, Ultimo caracter: {cad[-1]}, Caracteres 2-6: {cad[2:7]}")
 # Ejercicio 2: Normalización de texto
 
 """

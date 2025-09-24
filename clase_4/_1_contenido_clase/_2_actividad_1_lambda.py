@@ -31,3 +31,6 @@ val1 if condicion else val2
 mayor = lambda x, y: x if x > y else y
 print(mayor(7, 3))    # Output: 7
 
+menor = lambda x, y: x if x < y else y
+print(menor(1,2))
+
