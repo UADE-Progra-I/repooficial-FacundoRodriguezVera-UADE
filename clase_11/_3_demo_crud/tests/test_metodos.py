@@ -7,7 +7,7 @@ def test_write_read_estudiantes():
     write_data(FILE_NAME, data)
     response = read_data(FILE_NAME)
     assert len(response) == 1, "Debe retornar solo 1 registro"
-    assert response[0][1] == "John", "El nombre debe ser John"
+    assert response[0][1] == "Joh", "El nombre debe ser John"
 
 
 def test_insert_row():
